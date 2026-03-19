@@ -1,0 +1,243 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+}
+
+nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.hero{
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(rgba(242,230,234,0.9), rgba(242,230,234,0.9)),url("https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 12px 25px;
+    border: none;
+    background: #d48fa0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.services{
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+.service-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.service-card{
+    background: #f9f9f9;
+    padding: 25px;
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.service-card h3{
+    margin-bottom: 10px;
+}
+
+.about{
+    padding: 60px 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.about-text{
+    max-width: 700px;
+    text-align: center;
+}
+
+.about-text p{
+    line-height: 1.7;
+    color: #555;
+}
+
+.hero p{
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+button:hover{
+    background: #bf7588;
+}
+
+.contact{
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.contact p{
+    margin-top: 10px;
+    color: #555;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-form button{
+    align-self: center;
+}
+
+.shop{
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.product-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.product-card{
+    background: #f9f9f9;
+    padding: 25px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.booking-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-page{
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.contact-left{
+    flex: 2;
+}
+
+.contact-right{
+    flex: 1;
+}
+
+.contact-form-section,
+.booking,
+.contact-details{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.booking{
+    margin-top: 30px;
+}
+
+.contact-form-section h2,
+.booking h2,
+.contact-details h3{
+    margin-top: 0;
+}
+
+.contact-details{
+    line-height: 1.8;
+    color: #555;
+}
+
+@media (max-width: 768px){
+   
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .contact-page{
+        flex-direction: column;
+    }
+    .service-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero{
+        padding: 100px 20px;
+    }
+    .hero h2{
+        font-size: 28px;
+    }
+}
+
+#cartCount{
+    text-align: center;
+    font-weight: bold;
+    margin-top: #333;
+}
