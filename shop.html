@@ -18,12 +18,20 @@
                 <a href="services.html">Services</a>
                 <a href="shop.html">Shop</a>
                 <a href="contact.html">Contact</a>
+                <a href="checkout.html" class="cart-nav">
+                    🛒 <span id="navCartCount">0</span>
+                </a>
             </nav>
         </header>
 
         <section class="shop">
-            <h2>Our Products</h2>
-            <p id="cartCount">Cart: 0 items</p>
+            <h2 class="section-title">Our Products</h2>
+            <div class = "cart-summary">
+                <p id="cartCount">Cart: 0 items</p>
+                <a href="checkout.html" class="view-cart-btn">View Cart</a>
+            </div>
+
+            <p id="cartMessage"></p>
 
             <div class="product-container">
                 
@@ -31,53 +39,26 @@
                     <h3>Face Cream</h3>
                     <p>Hydrating daily care for soft skin.</p>
                     <p><strong>149 </strong></p>
-                    <button class="add-to-cart" data-product="Face Cream">Add to Cart</button>
+                    <button class="add-to-cart" data-product="Face Cream" data-price="149">Add to Cart</button>
                 </div>
 
                 <div class="product-card">
                     <h3>Body Lotion</h3>
                     <p>Nourishing lotion with floral fragrance.</p>
                     <p><strong>129 </strong></p>
-                    <button class="add-to-cart" data-product="Body Lotion">Add to Cart</button>
+                    <button class="add-to-cart" data-product="Body Lotion" data-price="129">Add to Cart</button>
                 </div>
 
                 <div class="product-card">
                     <h3>Beauty Serum</h3>
                     <p>Light serum for glowing and fresh skin.</p>
                     <p><strong>199 </strong></p>
-                    <button class="add-to-cart" data-product="Beauty Serum">Add to Cart</button>
+                    <button class="add-to-cart" data-product="Beauty Serum" data-price="199">Add to Cart</button>
                 </div>
             </div>
 
-            <p id="cartMessage"></p>
         </section>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-
-                const cartButtons = document.querySelectorAll(".add-to-cart");
-                const cartMessage = document.getElementById("cartMessage");
-                const cartCount = document.getElementById("cartCount");
-
-                let count = 0;
-
-                cartButtons.forEach(function(button) {
-                    button.addEventListener("click", function() {
-                        const productName = this.dataset.product;
-                        count++;
-                        if(count === 1){
-                            cartCount.textContent = "Cart: 1 item";
-                        }else {
-                            cartCount.textContent = "Cart: " + count + " items";
-                        }
-
-                        cartMessage.textContent = productName + " added to cart!";
-                        cartMessage.style.color = "#4CAF50";
-                        cartMessage.style.marginTop = "20px";
-                        cartMessage.style.fontWeight = "bold";
-                    });
-                });
-            });
-        </script>
+        <script src="script.js"></script>
     </body>
 
 </html>

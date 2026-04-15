@@ -17,13 +17,100 @@
                 <a href="services.html">Services</a>
                 <a href="shop.html">Shop</a>
                 <a href="contact.html">Contact</a>
+                <a href="checkout.html" class="cart-nav">
+                    🛒 <span id="navCartCount">0</span>
+                </a>
             </nav>
         </header>
 
         <section class="contact-page">
             
             <div class="contact-left">
-                <section class="contact-form-section">
+               
+                <section class="booking" id="booking">
+                    <h2>Book an Appointment</h2>
+                    
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bookingEmail">Email</label>
+                            <input type="email" id="bookingEmail" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bookingPhone">Phone</label>
+                            <input type="tel" id="bookingPhone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="serviceSelect">Select Service</label>
+                            <select id="serviceSelect" required>
+                                <option value="">Choose a service</option>
+
+                                <optgroup label="Face & Skin">
+                                    <option value="Facial Treatment">Facial Treatment</option>
+                                    <option value="Skin Care">Skin Care</option>
+                                </optgroup>
+
+                                <optgroup label="Brows & Lashes">
+                                    <option value="Eyebrow Shaping">Eyebrow Shaping</option>
+                                    <option value="Eyebrow Tinting">Eyebrow Tinting</option>
+                                    <option value="Lash Lift">Lash Lift</option>
+                                    <option value="Lash Extensions">Lash Extensions</option>
+                                </optgroup>
+
+                                <optgroup label="Nails">
+                                    <option value="Classic Manicure">Classic Manicure</option>
+                                    <option value="Gel Polish Manicure">Gel Polish Manicure</option>
+                                    <option value="Gel Nail Extensions">Gel Nail Extensions</option>
+                                    <option value="Gel Nail Maintenance">Gel Nail Maintenance</option>
+                                    <option value="Classic Pedicure">Classic Pedicure</option>
+                                    <option value="Gel Pedicure">Gel Pedicure</option>
+                                </optgroup>
+
+                                <optgroup label="Hair">
+                                    <option value="Haircut">Haircut</option>
+                                    <option value="Hair Coloring">Hair Coloring</option>
+                                    <option value="Hair Styling">Hair Styling</option>
+                                    <option value="Hair Treatment">Hair Treatment</option>
+                                </optgroup>
+
+                                <optgroup label="Makeup">
+                                    <option value="Day Makeup">Day Makeup</option>
+                                    <option value="Evening Makeup">Evening Makeup</option>
+                                    <option value="Bridal Makeup">Bridal Makeup</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bookingDate">Date</label>
+                            <input type="date" id="bookingDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bookingTime">Time</label>
+                            <input type="time" id="bookingTime" required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="bookingNotes">Additional Notes</label>
+                            <textarea id="bookingNotes" placeholder="Additional notes (optional)"></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <button type="submit">Book Now</button>
+                        </div>   
+                    </form>
+
+                    <p id="bookingMessage"></p>
+                </section>
+
+                 <section class="contact-form-section">
                     <h2>Contact Us</h2>
                     <p>Send us your questions and we will get back to you.</p>
 
@@ -34,26 +121,7 @@
                         <button type="submit">Send Message</button>
                     </form>
                 </section>
-
-                <section class="booking">
-                    <h2>Book an Appoiment</h2>
-                    <form class="booking-form" id="bookingForm">
-                        <input type="text" name="name" placeholder="Full Name" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <input type="date" name="date" required>
-
-                        <select name="service">
-                            <option value="">Select Service</option>
-                            <option value="facial">Facial Treatment</option>
-                            <option value="manicure">Manicure & Pedicure</option>
-                            <option value="skincare">Skin Care</option>
-                        </select>
-
-                        <textarea name="message" placeholder="Additional notes (optional)"></textarea>
-                        <button type="submit">Book Appoiment</button>
-                    </form>
-                    <p id="bookingMessage"></p>
-                </section>
+            
             </div>
 
             <div class="contact-right">
@@ -61,11 +129,11 @@
                     <h3>Our Studio</h3>
 
                     <p>Bloom Beauty Studio</p>
-                    <p>Street</p>
-                    <p>City</p>
-                    <p>Country</p>
+                    <p>Banegårdsgade 2</p>
+                    <p>8700 Horsens</p>
+                    <p>Denmark</p>
 
-                    <p><strong>Phone:</strong>xxxxxxx</p>
+                    <p><strong>Phone:</strong>12 34 56 78</p>
                     <p><strong>Email:</strong>hello@bloombeauty.com</p>
 
                     <p><strong>Opening Hours:</strong></p>

@@ -2,8 +2,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background: #f9f9f9;
+    color: #333;
 }
 
+/* Header */
 header{
     display: flex;
     justify-content: space-between;
@@ -12,12 +14,19 @@ header{
     background: white;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 nav a{
-    margin-left: 20px;
     text-decoration: none;
     color: #333;
 }
 
+/* Hero */
 .hero{
     text-align: center;
     padding: 120px 20px;
@@ -31,6 +40,13 @@ nav a{
     margin-bottom: 10px;
 }
 
+.hero p{
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Buttons */
 button{
     padding: 12px 25px;
     border: none;
@@ -40,71 +56,137 @@ button{
     cursor: pointer;
 }
 
-.services{
-    padding: 60px 20px;
-    text-align: center;
-    background: white;
-}
-
-.service-container{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-.service-card{
-    background: #f9f9f9;
-    padding: 25px;
-    width: 220px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-.service-card h3{
-    margin-bottom: 10px;
-}
-
-.about{
-    padding: 60px 20px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-}
-
-.about-text{
-    max-width: 700px;
-    text-align: center;
-}
-
-.about-text p{
-    line-height: 1.7;
-    color: #555;
-}
-
-.hero p{
-    font-size: 18px;
-    margin-bottom: 25px;
-    color: #333;
-}
-
 button:hover{
     background: #bf7588;
 }
 
-.contact{
+.book-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #d48fa0;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.book-btn:hover {
+    background: #bf7588;
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 30px 0 30px;
+}
+
+/* Services General */
+.services{
+    padding: 50px 20px 60px;
+    background: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.service-category-title {
+    margin: 45px 0 20px;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 240px));
+    gap: 24px;
+    justify-content: center;
+}
+
+.service-card{
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+}
+
+.service-card h3{
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.service-card p {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.service-btn {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 22px;
+    background: #d48fa0;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.service-btn:hover {
+    background: #bf7588;
+}
+
+/* Homepage services preview */
+.services-preview {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services-preview h2 {
+    margin-bottom: 30px;
+}
+
+/* About */
+.about {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+.about-text {
+    max-width: 700px;
+    text-align: center;
+}
+
+.about-text p {
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Contact */
+.contact {
     padding: 60px 20px;
     text-align: center;
     background: #f9f9f9;
 }
 
-.contact p{
+.contact p {
     margin-top: 10px;
     color: #555;
 }
 
-.contact-form{
+.contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -112,7 +194,7 @@ button:hover{
 }
 
 .contact-form input,
-.contact-form textarea{
+.contact-form textarea {
     padding: 14px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -120,51 +202,12 @@ button:hover{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.contact-form button{
+.contact-form button {
     align-self: center;
 }
 
-.shop{
-    padding: 60px 20px;
-    text-align: center;
-    background: #fff;
-}
-
-.product-container{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-
-.product-card{
-    background: #f9f9f9;
-    padding: 25px;
-    width: 220px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-
-.booking-form{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.booking-form input,
-.booking-form select,
-.booking-form textarea{
-    padding: 14px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.contact-page{
+/* Contact page / booking */
+.contact-page {
     max-width: 1200px;
     margin: 60px auto;
     padding: 0 20px;
@@ -173,71 +216,323 @@ button:hover{
     align-items: flex-start;
 }
 
-.contact-left{
+.contact-left {
     flex: 2;
 }
 
-.contact-right{
+.contact-right {
     flex: 1;
 }
 
 .contact-form-section,
 .booking,
-.contact-details{
+.contact-details {
     background: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.booking{
-    margin-top: 30px;
+.booking {
+    margin-bottom: 30px;
 }
 
 .contact-form-section h2,
 .booking h2,
-.contact-details h3{
+.contact-details h3 {
     margin-top: 0;
+    margin-bottom: 25px;
 }
 
-.contact-details{
+.contact-details {
     line-height: 1.8;
     color: #555;
 }
 
-@media (max-width: 768px){
-   
-    header{
+.booking-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.booking-form button {
+    padding: 12px 24px;
+    border: none;
+    background: #d48fa0;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.booking-form button:hover {
+    background: #bf7588;
+}
+
+#bookingMessage {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Shop */
+.shop {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.product-card {
+    background: #f9f9f9;
+    padding: 25px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.cart-summary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#cartCount {
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.view-cart-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #d48fa0;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.view-cart-btn:hover {
+    background: #bf7588;
+}
+
+/* Checkout */
+.checkout-section {
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.checkout-section h2 {
+    margin-bottom: 20px;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#checkoutTotal {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0 30px;
+}
+
+.checkout-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.checkout-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-form label {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.checkout-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.checkout-form .full-width {
+    grid-column: 1 / -1;
+}
+
+#checkoutMessage {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #4CAF50;
+}
+
+.checkout-actions {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0 30px;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #777;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.secondary-btn:hover {
+    background: #555;
+}
+
+/* Nav cart */
+.cart-nav {
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+nav a.cart-nav {
+    padding: 8px 12px;
+}
+
+#navCartCount {
+    background: #d48fa0;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 999px;
+    line-height: 1;
+}
+
+/* Quantity controls */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quantity-controls button {
+    padding: 5px 10px;
+    border: none;
+    background: #d48fa0;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quantity-controls button:hover {
+    background: #bf7588;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
         flex-direction: column;
         gap: 15px;
     }
-    nav{
-        display: flex;
-        flex-wrap: wrap;
+
+    nav {
         justify-content: center;
-        gap: 10px;
     }
-    .contact-page{
-        flex-direction: column;
-    }
-    .service-container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .product-container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .hero{
+
+    .hero {
         padding: 100px 20px;
     }
-    .hero h2{
+
+    .hero h2 {
         font-size: 28px;
     }
-}
 
-#cartCount{
-    text-align: center;
-    font-weight: bold;
-    margin-top: #333;
+    .contact-page {
+        flex-direction: column;
+    }
+
+    .booking-form,
+    .checkout-form {
+        grid-template-columns: 1fr;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: auto;
+    }
+
+    .services {
+        margin: 30px auto;
+    }
+
+    .service-category-title {
+        font-size: 24px;
+        margin: 35px 0 15px;
+    }
 }
